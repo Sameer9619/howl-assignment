@@ -3,7 +3,7 @@ import { useInView, motion } from 'framer-motion';
 import { useRef } from 'react';
 import { slideUp, opacity } from './animation';
 import Rounded from '../../common/RoundedButton';
-export default function index() {
+export default function Index() {
 
     // const phrase = "Helping brands to stand out in the digital era. Together we will set the new status quo. No nonsense, always on the cutting edge.";
      const phrase="A full-stack digital marketing company that uses a consultative approach combining creativity and technology to solve marketing problems."
