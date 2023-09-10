@@ -1,7 +1,42 @@
-.footer{
+// .footer{
+//     display: flex;
+//     width: 100%;
+//     justify-content: space-between;
+//     font-size: 12px;
+//     gap: 40px;
+// }
+
+
+
+.footer {
     display: flex;
     width: 100%;
     justify-content: space-between;
     font-size: 12px;
     gap: 40px;
-}
+  
+    // Media query for mobile screens (max-width: 768px)
+    @media screen and (max-width: 768px) {
+      flex-direction: column; /* Stack items vertically for mobile */
+      align-items: center; /* Center items horizontally for mobile */
+      text-align: center; /* Center text for mobile */
+      gap: 20px; /* Reduce the gap for mobile */
+    }
+  
+    // Media query for tablet screens (max-width: 1024px)
+    @media screen and (max-width: 1024px) {
+      flex-direction: row; /* Restore horizontal layout for tablets */
+      align-items: center; /* Center items horizontally for tablets */
+      gap: 30px; /* Adjust the gap for tablets */
+    }
+  
+    // Media query for screens with a maximum width of 368px
+    @media screen and (max-width: 368px) {
+      flex-direction: column; /* Stack items vertically for screens <= 368px */
+      align-items: center; /* Center items horizontally for screens <= 368px */
+      text-align: center; /* Center text for screens <= 368px */
+      gap: 15px; /* Reduce the gap for screens <= 368px */
+      font-size: 10px; /* Adjust font size for screens <= 368px */
+    }
+  }
+  

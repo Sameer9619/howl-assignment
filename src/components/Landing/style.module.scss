@@ -59,4 +59,134 @@
       }
     }
   }
+
+
+
+// Media query for tablet devices (max-width: 768px)
+@media screen and (max-width: 768px) {
+  .sliderContainer {
+    top: calc(100vh - 250px);
+  }
+
+  .slider p {
+    font-size: 120px;
+    padding-right: 20px;
+  }
+
+  .description {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+  }
+}
+
+// Media query for mobile devices (max-width: 480px)
+@media screen and (max-width: 480px) {
+  .sliderContainer {
+    top: calc(100vh - 150px);
+  }
+
+  .slider p {
+    font-size: 80px;
+    padding-right: 10px;
+  }
+
+  .description {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    svg {
+      transform: scale(1.5);
+      margin-bottom: 20px;
+    }
+  }
+}
+  // Media query for mobile devices (max-width: 480px)
+  @media screen and (max-width: 480px) {
+    .sliderContainer {
+      top: calc(100vh - 150px);
+    }
+
+    .slider p {
+      font-size: 80px;
+      padding-right: 10px;
+    }
+
+    .description {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      svg {
+        transform: scale(1.5);
+        margin-bottom: 20px;
+      }
+    }
+  }
+ // Media query for mobile devices (max-width: 480px)
+ @media screen and (max-width: 480px) {
+  .sliderContainer {
+    top: calc(100vh - 150px);
+  }
+
+  .slider p {
+    font-size: 80px;
+    padding-right: 10px;
+  }
+
+  .description {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    svg {
+      transform: scale(1.5);
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
   
+  // Media query for mobile devices (max-width: 480px)
+  @media screen and (max-width: 480px) {
+    .sliderContainer {
+      top: calc(100vh - 250px); /* Adjust top position for mobile */
+    }
+
+    .slider p {
+      font-size: 120px; /* Adjust font size for mobile */
+      padding-right: 20px; /* Adjust padding for mobile */
+    }
+
+    .description {
+      top: 60%; /* Adjust top position for mobile */
+      font-size: 16px; /* Adjust font size for mobile */
+      svg {
+        transform: scale(1.5); /* Adjust SVG size for mobile */
+        margin-bottom: 20px; /* Adjust margin for mobile */
+      }
+    }
+  }
