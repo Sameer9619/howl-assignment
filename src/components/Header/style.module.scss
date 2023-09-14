@@ -120,7 +120,7 @@
         width: 100%;
         position: relative;
         z-index: 1;
-        &::after, &::before{
+        &::after, &::before{   
             content: "";
             display: block;
             height: 1px;
@@ -156,41 +156,95 @@
 }
 
 
-.header {
-    // Your existing styles for desktop devices
-  
-    // Media query for mobile devices (max-width: 480px)
-    @media screen and (max-width: 480px) {
-      padding: 20px; /* Increase padding for better touch targets */
-      .logo {
-        .name {
-          .codeBy,
-          .dennis,
-          .snellenberg {
-            transform: translateX(0); /* Reset translations for mobile */
-          }
-        }
-      }
-      .nav {
-        display: none; /* Hide desktop navigation for mobile */
-      }
-    }
+
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px; 
   }
-  
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .nav {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  .nav .el {
+    padding: 10px 0;  
+  }
+
   .headerButtonContainer {
-    transform: scale(0);
-    position: fixed;
-    right: 0px;
-    z-index: 4;
-  
-    // Media query for mobile devices (max-width: 480px)
-    @media screen and (max-width: 480px) {
-      transform: scale(1); /* Show the mobile menu button */
-      .button {
-        margin: 15px; /* Adjust margin for mobile */
-        width: 60px; /* Adjust button size for mobile */
-        height: 60px;
-      }
-    }
+    display: block;
   }
+
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+
+  .header {
+    padding: 35px 60px;
+  }
+
+  .nav .el {
+    padding: 15px 20px;
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
+
+}
+
+
+/* Smaller Mobile */
+@media (max-width: 414px) {
+
+  .header {
+    padding: 10px;
+  }
+
+  .logo {
+   flex-direction: column;
+   align-items: flex-start;
+  }
+
+  .logo p {
+    font-size: 14px;
+  }
+
+  .nav .el {
+    padding: 5px 0;
+  }
+
+  .nav a {
+    font-size: 16px;
+  }
+
+}
+
+/* iPhone SE */ 
+@media (max-width: 390px) {
+
+  .logo {
+    margin-bottom: 10px;
+  }
+  
+  .nav .el {
+    padding: 3px 0;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+}
+
+
+
   
